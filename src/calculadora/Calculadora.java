@@ -35,4 +35,20 @@ public class Calculadora {
 		ans=0;
 	}
 	
+	public int div(int a, int b){
+		if(b == 0) throw new ArithmeticException("No se puede dividir por cero!!!");
+		ans = a / b;
+		return ans;
+	}
+	
+	public void operacionOptima(){
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		//esta bien para bucles infinitos for(;;);
+	}
+	
 }
