@@ -13,7 +13,7 @@ public class AssertTest {
 		java.util.Date data1 = new Date();
 		java.util.Date data2 = new Date();
 		
-		assertSame( data1, data2); //mismo puntero
+		assertNotSame( data1, data2); //mismo puntero
 		assertEquals(data1, data2);// llama al equals de los objetos
 		
 //		assertTrue
